@@ -14,18 +14,20 @@ public class Producte {
     private String nombre;
     private Alergenos[] listadoAlergenos;
     private int stock;
+    private int precio;
     private Producte[] ingredientes;
     //Generamos un constructor vacio que se usara para generar recursivamente productos desde el archivo
     public Producte() {
     }
     //Constructor base este se eliminara en un futuro
 
-    public Producte(String nombre, Alergenos[] listadoAlergenos, int stock, Producte[] ingredientes) {
+    public Producte(String nombre, Alergenos[] listadoAlergenos, int stock, int precio, Producte[] ingredientes) {
         this.nombre = nombre;
         this.listadoAlergenos = listadoAlergenos;
         this.stock = stock;
+        this.precio = precio;
         this.ingredientes = ingredientes;
     }
-    
+
     
 }
