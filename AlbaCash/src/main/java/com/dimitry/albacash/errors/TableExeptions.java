@@ -9,5 +9,5 @@ package com.dimitry.albacash.errors;
  * @author didra
  */
 public class TableExeptions extends Exception {
-    
+     
 }
