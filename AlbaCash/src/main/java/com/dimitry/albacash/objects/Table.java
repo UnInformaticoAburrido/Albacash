@@ -9,16 +9,18 @@ package com.dimitry.albacash.objects;
  * @author didra
  */
 public class Table {
-    private String numero;
+    private float numero;
     //Comanda master almacenara un objeto comanda el cual tendra toda la informacion de  todo el tiempo en el cual la mesa ha sido ocupada.
     private Comanda comandaMaster;
     //Como dice el nombre actual es una comanda la cual es la que se deve preparar y servir.
     private Comanda actual;
     
-    //GEnerare un constructor
+    //GEnerare un constructor este solo creara el objeto base.
 
-    public Table(String numero) {
+    public Table(float numero,String fetcha) {
+        Comanda comandaMaster= new Comanda(numero, fetcha);
         this.numero = numero;
+        
     }
     
     

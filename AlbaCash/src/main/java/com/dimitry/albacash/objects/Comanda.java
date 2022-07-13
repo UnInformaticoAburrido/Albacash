@@ -12,26 +12,19 @@ import java.util.ArrayList;
  * @author didra
  */
 public class Comanda {
-    private int numeroMesa;
+    private float numeroMesa;
     private String fecha;
     private String Autor;
     private ArrayList<Linea> cuerpo;
     
     //Generare un contructor el cual contruira la comanda con informacion predefinida y posteriormente añadira las lineas.
 
-    public Comanda(int numeroMesa) {
+    public Comanda(float numeroMesa, String fecha) {
         this.numeroMesa = numeroMesa;
-        
-        
+        this.fecha=fecha;
     }
-    private String obtenerfecha(){
-        //para que el contructor inserte una hora exacta.
-        String dev;
-        LocalDateTime locaDate = LocalDateTime.now();
-        int hours  = locaDate.getHour();
-        int minutes = locaDate.getMinute();
-        int seconds = locaDate.getSecond();
-        dev = ("Hora : " + hours  + ":"+ minutes +":"+seconds);
-        return dev;
+    public Comanda(float numeroMesa) {
+        this.numeroMesa = numeroMesa;
+        this.fecha=fecha;
     }
 }

@@ -14,11 +14,17 @@ import java.time.LocalDateTime;
 public class AlbaCash {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+    }
+    //Este metodo busca almacenar la hora de creacion de una comanda
+    private String obtenerfecha(){
+        //para que el contructor inserte una hora exacta.
+        String dev;
         LocalDateTime locaDate = LocalDateTime.now();
         int hours  = locaDate.getHour();
         int minutes = locaDate.getMinute();
         int seconds = locaDate.getSecond();
-        System.out.println("Hora actual : " + hours  + ":"+ minutes +":"+seconds);
+        dev = ("Hora : " + hours  + ":"+ minutes +":"+seconds);
+        return dev;
     }
 }

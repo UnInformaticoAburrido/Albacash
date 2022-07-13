@@ -29,5 +29,8 @@ public class Producte {
         this.ingredientes = ingredientes;
     }
 
+    public void GsonProducte(){
+        
+    }
     
 }
